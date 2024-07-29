@@ -30,7 +30,7 @@
         <nav>
           <ul class="nav-links">
             <li>
-              <input type="text" id="search-bar" placeholder="Search.." />
+              <input type="text" id="search-bar2" placeholder="Search.." />
             </li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -66,10 +66,18 @@
                 ><i class="fa-solid fa-envelope"></i>
               </a>
             </div>
-            <button id="Facebook" class="share-buttons">
+            <button
+              id="Facebook"
+              class="share-buttons"
+              onclick="shareOnFacebook()"
+            >
               Share on Facebook
             </button>
-            <button id="LinkedIn" class="share-buttons">
+            <button
+              id="LinkedIn"
+              class="share-buttons"
+              onclick="shareOnLinkedIn()"
+            >
               Share on LinkedIn
             </button>
           </section>
@@ -113,7 +121,7 @@
 
     <footer>
       <p id="footer-title">Drop your ideas, Let me know what you think!</p>
-      <form action="">
+      <form id="form-part" action="">
         <div class="form-wrapper">
           <div class="pairs">
             <label for="firstname">First Name</label> <br />
@@ -128,13 +136,13 @@
             <input type="text" id="email" name="email" required />
           </div>
           <div class="pairs">
-            <label for="email">Leave a message</label> <br />
+            <label for="message">Leave a message</label> <br />
             <textarea name="message" id="message"></textarea>
           </div>
         </div>
         <input id="submit-button" type="submit" value="Submit" />
       </form>
     </footer>
-    <script src="\assets\script.js"></script>
+    <script src="..\assets\script.js"></script>
   </body>
 </html>

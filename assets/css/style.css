@@ -28,6 +28,12 @@ main {
   text-align: center;
 }
 
+#search-bar2{
+  margin-top: 12px;
+  margin-right: 15px;
+  height: 20px;
+}
+
 figcaption,
 #sub-title {
   font-size: 35px;
