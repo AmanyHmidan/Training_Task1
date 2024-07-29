@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets\css\style.css" />
+  </head>
+  <body>
+    <header class="blog-header">
+      <nav>
+        <ul class="nav-links">
+          <li><input type="text" id="search-bar" placeholder="Search.." /></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        &#9776;
+      </button>
+      <div class="hidden-header">
+        <nav>
+          <ul class="nav-links">
+            <li>
+              <input type="text" id="search-bar" placeholder="Search.." />
+            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <header>
+        <br /><br />
+        <h1 id="title">A LIFESTYLE BLOG</h1>
+        <h2 id="sub-title">Create your Own Reality</h2>
+      </header>
+
+      <section class="inspire-images">
+        <div class="image-wrapper">
+          <img src="assets\images\flower.jpeg" alt="flower" />
+        </div>
+        <div class="image-wrapper">
+          <img src="assets\images\inspiring-quotes.jpeg" alt="inspire" />
+        </div>
+        <div class="image-wrapper">
+          <img src="assets\images\rain.jpeg" alt="rain" />
+        </div>
+      </section>
+
+      <div id="posts-header"><h2>Top Posts</h2></div>
+      <section class="cards">
+        <div class="card-item">
+          <figure>
+            <div>
+              <img src="assets\images\breakfast.jpg" alt="breakfast" />
+            </div>
+          </figure>
+          <figcaption>breakfast</figcaption>
+          <p>
+            Sunny-side up eggs and creamy avocado slices create a delightful
+            breakfast experience. Nestled on whole-grain toast, the eggs offer a
+            rich source of protein, while the avocado provides healthy fats and
+            a buttery texture. A sprinkle of salt and pepper, along with a dash
+            of lemon juice, enhances the flavor, making each bite a perfect
+            balance of taste and nutrition. This simple yet satisfying meal not
+            only fuels your morning but also supports a wholesome, balanced
+            diet.
+          </p>
+          <button class="read-more">
+            <a href="assets\blog.html">Read More</a>
+          </button>
+        </div>
+        <div class="card-item">
+          <figure>
+            <div><img src="assets\images\coffe.jpeg" alt="coffee" /></div>
+          </figure>
+          <figcaption>coffee</figcaption>
+          <p>
+            Coffee, a beloved beverage enjoyed worldwide, is renowned for its
+            rich aroma and invigorating effects. Made from roasted coffee beans,
+            it offers a variety of flavors ranging from bold and bitter to
+            smooth and sweet, depending on the blend and brewing method. Whether
+            enjoyed black, with milk, or as a frothy cappuccino, coffee provides
+            a comforting ritual and a much-needed energy boost to start the day
+            or recharge in the afternoon. Its cultural significance and
+            versatility make it a staple in many households and cafes.
+          </p>
+          <button class="read-more">
+            <a href="assets\blog.html">Read More</a>
+          </button>
+        </div>
+        <div class="card-item">
+          <figure>
+            <div class="card-image">
+              <img src="assets\images\purple.jpeg" alt="purple" />
+            </div>
+          </figure>
+          <figcaption>purple</figcaption>
+          <p>
+            Purple, a color often associated with royalty and luxury, exudes a
+            sense of elegance and sophistication. Its rich, deep hues blend the
+            calm stability of blue with the fierce energy of red, creating a
+            balance that is both mysterious and uplifting. Historically, purple
+            dyes were rare and expensive, making the color a symbol of wealth
+            and power. Today, it continues to evoke creativity, wisdom, and
+            serenity, whether seen in nature's lavender fields or in the vibrant
+            tones of fashion and design.
+          </p>
+          <button class="read-more">
+            <a href="assets\blog.html">Read More</a>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p id="footer-title">Drop your ideas, Let me know what you think!</p>
+      <form action="">
+        <div class="form-wrapper">
+          <div class="pairs">
+            <label for="firstname">First Name</label> <br />
+            <input type="text" id="firstname" name="firstname" required />
+          </div>
+          <div class="pairs">
+            <label for="lastname">Last Name</label> <br />
+            <input type="text" id="lastname" name="lastname" required />
+          </div>
+          <div class="pairs">
+            <label for="email">Email</label> <br />
+            <input type="text" id="email" name="email" required />
+          </div>
+          <div class="pairs">
+            <label for="email">Leave a message</label> <br />
+            <textarea name="message" id="message"></textarea>
+          </div>
+        </div>
+        <input id="submit-button" type="submit" value="Submit" />
+      </form>
+    </footer>
+
+    <script src="assets\script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+.form-wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.form-wrapper > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#submit-button {
+  display: block;
+  margin: auto;
+  background-color: rgb(206, 155, 206);
+}
+
+input {
+  width: 200px;
+  height: 30px;
+  background-color: transparent;
+}
+
+#message {
+  width: 200px;
+  height: 30px;
+  background-color: transparent;
+}
+
+.pairs {
+  padding: 20px;
+}
+
+#footer-title {
+  font-size: 35px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(199, 130, 199);
+  -webkit-text-stroke: 1px black;
+}
+
+@media (max-width: 600px) {
+  .form-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

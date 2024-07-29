@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="..\assets\css\blog.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="blog-header">
+      <nav>
+        <ul class="nav-links">
+          <li><input type="text" id="search-bar" placeholder="Search.." /></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="../index.html">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        &#9776;
+      </button>
+      <div class="hidden-header">
+        <nav>
+          <ul class="nav-links">
+            <li>
+              <input type="text" id="search-bar" placeholder="Search.." />
+            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="../index.html">Home</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="article-container">
+        <article class="my-blog">
+          <section class="personal-info">
+            <div><img src="..\assets\images\girl2.jpg" alt="girl" /></div>
+            <div>
+              <p>
+                Amany Hmidan <br />Computer Engineer <br />Ramallah <br />Jaffal
+                Group
+              </p>
+            </div>
+            <div class="social">
+              <a
+                class="icon"
+                href="https://github.com/AmanyHmidan"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                class="icon"
+                href="https://www.facebook.com/amany.hmidan.7?mibextid=LQQJ4d"
+                target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a class="icon" href="mailto:amanyhmidan@gmail.com"
+                ><i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+            <button id="Facebook" class="share-buttons">
+              Share on Facebook
+            </button>
+            <button id="LinkedIn" class="share-buttons">
+              Share on LinkedIn
+            </button>
+          </section>
+          <section class="blog-main">
+            <h1>Breakfast</h1>
+            <p>
+              <b>Breakfast</b> is often touted as the most important meal of the
+              day, setting the tone for energy levels and mood. A nutritious
+              breakfast can help replenish glucose levels, a crucial energy
+              source that aids in brain function. Consuming a balanced meal in
+              the morning provides the body with essential nutrients and can
+              enhance cognitive performance, memory, and concentration
+              throughout the day. It's a great opportunity to include a variety
+              of food groups, ensuring a good mix of
+              <u>proteins, fats, and carbohydrates</u>.
+            </p>
+            <p>
+              <i>A traditional breakfast</i> varies widely across cultures,
+              reflecting local tastes, ingredients, and customs. In many Western
+              countries, a typical breakfast might include eggs, toast, cereal,
+              and fruit, accompanied by coffee or tea. Meanwhile, in Asian
+              countries, breakfast can be a savory affair with items like rice,
+              fish, miso soup, and pickled vegetables. These diverse breakfast
+              traditions highlight the importance of the meal in providing not
+              just sustenance, but also cultural and familial connections.
+            </p>
+            <p>
+              In recent years, there has been a growing trend towards more
+              health-conscious breakfast options. Smoothies, whole-grain
+              cereals, avocado toast, and yogurt parfaits have become popular
+              choices for those looking to start their day on a healthy note.
+              This shift reflects a broader awareness of the importance of a
+              balanced diet and the role of breakfast in maintaining overall
+              well-being. Whether through traditional meals or modern twists,
+              breakfast remains a cornerstone of daily nutrition.
+            </p>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      <p id="footer-title">Drop your ideas, Let me know what you think!</p>
+      <form action="">
+        <div class="form-wrapper">
+          <div class="pairs">
+            <label for="firstname">First Name</label> <br />
+            <input type="text" id="firstname" name="firstname" required />
+          </div>
+          <div class="pairs">
+            <label for="lastname">Last Name</label> <br />
+            <input type="text" id="lastname" name="lastname" required />
+          </div>
+          <div class="pairs">
+            <label for="email">Email</label> <br />
+            <input type="text" id="email" name="email" required />
+          </div>
+          <div class="pairs">
+            <label for="email">Leave a message</label> <br />
+            <textarea name="message" id="message"></textarea>
+          </div>
+        </div>
+        <input id="submit-button" type="submit" value="Submit" />
+      </form>
+    </footer>
+    <script src="\assets\script.js"></script>
+  </body>
+</html>
